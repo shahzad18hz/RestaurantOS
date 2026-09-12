@@ -1,0 +1,62 @@
+/* Scope legacy theme corrections to the operational workspace. */
+.erp-main.erp-main { background: #f3f5f7; }
+.erp-main :is(h1,h2,h3,button,label,th), .erp-header h2 { letter-spacing: 0 !important; }
+.erp-main .text-slate-400, .erp-main .text-gray-400,
+.erp-header .text-slate-400 { color: #596579; }
+.erp-page :is(input,select,textarea) { color: #172033 !important; }
+.erp-page :is(input,textarea)::placeholder { color: #64748b; opacity: 1; }
+.erp-page :is(button,a):focus-visible { outline: 3px solid #2563eb; outline-offset: 3px; }
+.erp-main .erp-page :is(.rounded-xl.border.bg-white,.rounded-2xl.border.bg-white) {
+  border-radius: 8px !important;
+  box-shadow: 0 1px 3px #1520330d !important;
+}
+.erp-main .erp-pos-shell > div:last-of-type {
+  background: #fff !important; color: #172033 !important;
+  border-color: #d4dce6 !important; box-shadow: none !important;
+}
+.erp-main .erp-pos-shell > div:last-of-type :is(h2,.font-bold,.text-white) { color: #172033 !important; }
+.erp-main .erp-pos-shell > div:last-of-type :is(.text-gray-400,.text-gray-500,.text-gray-600) { color: #596579 !important; }
+.erp-main .erp-pos-shell > div:last-of-type :is(input,select),
+.erp-main .erp-pos-shell > div:last-of-type .flex-1.space-y-2 > div {
+  background: #f8fafc !important; color: #172033 !important; border-color: #cbd5e1 !important;
+}
+.erp-main .erp-pos-shell > div:last-of-type > div:nth-of-type(1) button {
+  background: #f1f5f9 !important; color: #334155 !important; border-color: #cbd5e1 !important;
+}
+.erp-main .erp-pos-shell > div:last-of-type > div:nth-of-type(1) button.bg-black {
+  background: #1554c0 !important; color: #fff !important;
+}
+.erp-main .erp-pos-shell > div:last-of-type button[class*="mt-4"] {
+  background: #1554c0 !important; color: #fff !important; box-shadow: none !important;
+}
+.erp-main .erp-kds-shell { color: #f8fafc !important; background: #17212e !important; }
+.erp-main .erp-kds-shell :is(h1,h2,h3,.font-bold,.text-gray-900,.text-slate-900) { color: #f8fafc !important; }
+.erp-main .erp-kds-shell :is(.text-gray-400,.text-gray-500,.text-slate-400) { color: #c3cfdd !important; }
+.erp-main .erp-kds-shell .grid > div { background: #243244 !important; border-color: #526175 !important; border-radius: 8px !important; box-shadow: none !important; }
+.erp-main .erp-kds-shell .grid > div .space-y-2 > div { background: #17212e !important; border-color: #526175 !important; border-radius: 6px !important; }
+.erp-main .erp-kds-shell button { min-height: 36px; }
+.erp-demo-banner { flex-wrap: wrap; }
+.erp-demo-clock { min-width: 125px; font-variant-numeric: tabular-nums; }
+.erp-main .portfolio-hero-card {
+  min-height: 0; padding: 24px 0; border-radius: 0; box-shadow: none;
+  background: transparent; color: #172033; gap: 24px;
+  grid-template-columns: minmax(0,1fr) minmax(280px,1fr);
+  border-bottom: 1px solid #d4dce6;
+}
+.erp-main .portfolio-hero-card::after { display: none; }
+.erp-main .portfolio-hero-copy h1 { color: #172033 !important; font-size: 30px !important; line-height: 1.2 !important; margin: 12px 0 0 !important; }
+.erp-main .portfolio-hero-copy p { color: #596579; margin-top: 8px; }
+.erp-main .portfolio-live { color: #17654a; background: #e4f4ed; border-color: #9dcdb8; }
+.erp-main .portfolio-hero-status { display: flex; }
+.erp-main .status-mini-grid a { background: #fff; border: 1px solid #d4dce6; border-radius: 8px; }
+.erp-main .status-mini-grid span { color: #596579; font-size: 12px; }
+.erp-main .status-mini-grid b { color: #172033; }
+.erp-main .portfolio-secondary-action { color: #174994; background: #fff; border: 1px solid #a9bddb; }
+.erp-main .portfolio-primary-action { color: #fff; background: #1554c0; }
+.erp-main .portfolio-panel { border-radius: 0; border: 0; box-shadow: none; }
+.erp-main .portfolio-metric { border-radius: 8px; box-shadow: none; }
+@media (max-width: 720px) {
+  .erp-main .portfolio-hero-card { grid-template-columns: 1fr; padding: 16px 0; }
+  .erp-main .portfolio-hero-copy h1 { font-size: 26px !important; }
+  .erp-main .portfolio-hero-status { display: block; }
+}

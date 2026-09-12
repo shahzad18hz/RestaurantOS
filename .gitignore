@@ -1,0 +1,24 @@
+# dependencies
+node_modules/
+
+# Next.js build output
+.next/
+out/
+
+# local environment/secrets
+.env
+.env.local
+.env.*.local
+.env.*.bak
+.env.setup-tmp
+!.env.example
+
+# logs / OS / editor
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Prisma generated client — regenerate from prisma/schema.prisma
+/src/generated/prisma/
